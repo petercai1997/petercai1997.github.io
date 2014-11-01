@@ -110,6 +110,9 @@ p{
 .hide_tablet {
     display: none;
 }
+audio{
+	max-width:100%;
+}
 
 }
 
