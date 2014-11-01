@@ -90,7 +90,9 @@ audio{
 p{
 	font-family: sans-serif;
 }
-
+audio{
+	max-width:100%;
+}
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -110,9 +112,7 @@ p{
 .hide_tablet {
     display: none;
 }
-audio{
-	max-width:400px;
-}
+
 
 }
 
