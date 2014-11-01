@@ -87,6 +87,9 @@ img, object, embed, video {
 audio{
 	margin-top: 15px;
 }
+p{
+	font-family: sans-serif;
+}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
