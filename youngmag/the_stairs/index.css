@@ -70,19 +70,18 @@ img, object, embed, video {
 	width:80%;
 	margin:0 auto;
 }
-#titleimg{
-	width: 20%;
-}
 
 #title{
-	float:right;
-	margin: auto;
+	width: 75%;
+	margin: 0,auto;
 }
+
 
 #header{
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 	border-bottom: 2px solid #888;
+
 }
 audio{
 	margin-top: 15px;
@@ -92,6 +91,11 @@ p{
 }
 audio{
 	max-width:100%;
+}
+h1{
+	color: #FF0000;
+	font-family: "微软雅黑";
+	margin-left: 10px;
 }
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
