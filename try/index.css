@@ -5,7 +5,7 @@
 		clear: both;
 }
 #container{
-	width:100%;
+	width:90%;
 	margin:0 auto;
 }
 
@@ -23,6 +23,8 @@
 }
 audio{
 	margin-top: 15px;
+	display: block;
+	width: 85%;
 }
 p{
 	font-family: sans-serif;
