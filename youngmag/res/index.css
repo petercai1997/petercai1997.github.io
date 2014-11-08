@@ -1,4 +1,7 @@
-@charset "utf-8";
+﻿@charset "utf-8";
+
+
+
 
 body{
 	background:#CECECE url(./background.jpg);
@@ -14,9 +17,8 @@ body{
 }
 
 h1{
-	color: #FF0000;
-	font-family: "微软雅黑";
-	margin-left: 25px;
+	margin:20px auto;
+	text-align: center;
 }
 
 #container{
