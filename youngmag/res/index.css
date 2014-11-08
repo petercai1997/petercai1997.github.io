@@ -1,4 +1,11 @@
 @charset "utf-8";
+body{
+	background:#CECECE url(./background.jpg);
+	background-position: 50% 100%;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+
+}
 .clr{
 		width: 0;
 		height: 0;
@@ -24,12 +31,20 @@
 audio{
 	margin-top: 15px;
 	display: block;
-	
-}
-p{
-	font-family: sans-serif;
+
 }
 
+
+
+#text{
+	margin-top: 15px;
+	padding:0 10px;
+	background: url(./b.png) ;
+	float:left;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+
+}
 h1{
 	color: #FF0000;
 	font-family: "微软雅黑";
