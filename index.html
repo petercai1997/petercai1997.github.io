@@ -30,12 +30,10 @@
 		hr {
 			width:90%;
 		}
-		div#ae {
+		div.ae {
 			width:100px;
 			height:100px;
-			background-color:yellow;
 			margin:0 auto;
-			padding:10px;
 		}
 		a{	
 			color: red;
@@ -51,19 +49,41 @@
 	<div id="Container">
 		<h1> Welcome to ae site! </h1>
 		<hr>		
-		<div id="ae">
-			<p id="ae">ae</p>
+		<div class="ae">
+			<div style="background:yellow;border-radius:10px;height:100px;width:100px;padding:10px;" id="1">
+				<div style="font-size:2em; margin:0; text-align:center; clear:both;"><h2 id="2" style="margin:0;">ae</h2>
+				<button style="font-size:0.7em; auto;">cancel</button></div>
+				
+			</div>
 		</div>
 		
 		<p>
 			<a href=form_editer/>Make a form</a>
 			<br>
 			<a href=timer/>Timer</a>
+			
 		</p>
 		<hr>
 	</div>
 
 
 	</body>
+	<script type="text/javascript">
+		document.getElementById("1").style.left = (window.screen.availWidth )/2 + "px";
+		document.getElementById("1").style.top = (window.screen.availHeight )/2 + "px";
+		document.getElementById("1").onmouseover = function(){
+			document.getElementById("1").style.position = "absolute";
+			document.getElementById("1").style.left = Math.random()*(window.screen.availWidth-200) + "px";
+			document.getElementById("1").style.top = Math.random()*(window.screen.availHeight-200) + "px";
+			if(Math.random()>0.8){
+				document.getElementById("2").innerHTML = "haha";
+			}else{
+				document.getElementById("2").innerHTML = "ae";
+				if(Math.random()>0.8){
+					document.getElementById("1").style.position = "static";
+				}
+			}
+		}
+	</script>
 
 </html>
