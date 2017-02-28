@@ -5,11 +5,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Juli official site</title>	
 	<style>
+		body{
+			background-image: url("DJ.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size:cover;
+		}
 		div#Container {
 			width:800px;
 			margin:0 auto;
 			background-color: #F5F5F5;
 			padding: 20px 10px 20px 10px;
+			opacity: 0.95;
 		}
 	
 		h1 {
@@ -33,12 +41,23 @@
 		div.ae {
 			width:100px;
 			height:100px;
-			margin:0 auto;
+			margin:5px auto;
 		}
 		a{	
 			color: red;
 			font-size:30px;
 			line-height:50px;
+			text-align: center;
+		}
+		#juli{
+			display: none;
+			margin:auto;
+			height: 200px;
+			transition:height 1s;
+		}
+		#juli:hover{
+			height:400px;
+
 		}
 		
 	</style>
@@ -57,10 +76,14 @@
 			</div>
 		</div>
 		
+		<h2 id="julisb" style="display:none;text-align:center;margin-bottom:0px;padding:5px;">JULI SB</h2>
+
 		<p>
-			<a href=form_editer/>Make a form</a>
+			<img id="juli" src="juli.png" alt="juli" ></img>
+
+			<a href="form_editer">Make a form</a>
 			<br>
-			<a href=timer/>Timer</a>
+			<a href="timer">Timer</a>
 			
 		</p>
 		<hr>
@@ -69,12 +92,28 @@
 
 	</body>
 	<script type="text/javascript">
+		count =0;
+		sb=false;
+		sbb=true;
+		times=parseInt(Math.random()*5+5);
 		document.getElementById("1").style.left = (window.screen.availWidth )/2 + "px";
 		document.getElementById("1").style.top = (window.screen.availHeight )/2 + "px";
 		document.getElementById("1").onmouseover = function(){
 			document.getElementById("1").style.position = "absolute";
 			document.getElementById("1").style.left = Math.random()*(window.screen.availWidth-200) + "px";
 			document.getElementById("1").style.top = Math.random()*(window.screen.availHeight-200) + "px";
+			if(sb&&sbb){
+				count++;
+				document.getElementById("julisb").innerHTML+="!";
+				if(count==times){
+					document.getElementById("julisb").innerHTML="SB JULI unlocked!";
+					document.getElementById("juli").style.display="block";
+					sbb=false;
+				}
+			}else if(Math.random()>0.6){
+				document.getElementById("julisb").style.display="block";
+				sb=true;
+			}
 			if(Math.random()>0.8){
 				document.getElementById("2").innerHTML = "haha";
 			}else{
