@@ -82,6 +82,8 @@
 		<h2 id="julisb" style="display:none;text-align:center;margin-bottom:0px;padding:5px;">JULI SB</h2>
 
 		<p>
+			<audio id="ring" src="ring.mp3" loop="loop" preload="auto"></audio>
+
 			<img id="juli" src="juli.png" alt="juli" ></img>
 
 			<a href="form_editer">Make a form</a>
@@ -105,6 +107,8 @@
 			document.getElementById("1").style.position = "absolute";
 			document.getElementById("1").style.left = Math.random()*(window.screen.availWidth-200) + "px";
 			document.getElementById("1").style.top = Math.random()*(window.screen.availHeight-200) + "px";
+			document.getElementById("ring").play();
+
 			if(sb&&sbb){
 				count++;
 				document.getElementById("julisb").innerHTML+="!";
