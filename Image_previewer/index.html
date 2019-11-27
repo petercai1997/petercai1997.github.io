@@ -1,0 +1,87 @@
+
+<style type="text/css">
+ /* Add your css styles here */
+#drop{
+    background: grey;
+    width: 400px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    margin: 20px
+}
+#link{
+    width:200px;
+    margin-left:20px;
+}
+.img{
+    width: 600px;
+    display: block;
+    margin-bottom: 10px;
+}
+</style>
+ <!-- Enter your HTML code here -->
+<input type="text" id = "link" placeholder="link of image to review"></textarea>
+<button id="linkButton">preview</button>
+<div id = "drop">
+drop images here to preview
+</div>
+<div id = "imgs">
+
+</div>
+    
+ <script type="text/javascript">
+ // Add your javascript here
+let drop = document.getElementById('drop');
+let link = document.getElementById('link');
+let linkBt = document.getElementById('linkButton')
+let imgPool = document.getElementById('imgs');
+
+drop.addEventListener('drop',init,false);
+drop.addEventListener('dragover',init,false);
+drop.addEventListener('dragenter',init,false);
+drop.addEventListener('dragleave',init,false);
+
+
+function init(e){
+    e.preventDefault();
+    e.stopPropagation();
+}
+
+
+drop.addEventListener('drop',dropHandler,false);
+
+function dropHandler(e){
+    
+    let files = e.dataTransfer.files;
+    for (let i=0;i<files.length;i++){
+        upload(files[i])
+    }
+    
+}
+function upload(file){
+    let img = new Image();
+    img.classList.add("img");
+    imgPool.appendChild(img);
+
+    const reader = new FileReader();
+    reader.onload = (function(i){return function(e){i.src = e.target.result;};})(img);
+    reader.readAsDataURL(file);
+}
+
+linkBt.addEventListener("click",btClick,false);
+function btClick(e){
+    l = link.value;
+    console.log(l);
+    link.value = "";
+    uploadByLink(l);
+}
+
+function uploadByLink(l){
+    let img = new Image();
+    img.classList.add("img");
+    img.src = l;
+    imgPool.appendChild(img);
+}
+
+ </script>

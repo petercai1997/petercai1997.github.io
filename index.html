@@ -79,7 +79,7 @@
 			</div>
 		</div>
 		
-		<h2 id="julisb" style="display:none;text-align:center;margin-bottom:0px;padding:5px;">JULI SB</h2>
+		<h2 id="julisb" style="display:none;text-align:center;margin-bottom:0px;padding:5px;">JULI</h2>
 
 		<p>
 			<audio id="ring" src="ring.mp3" loop="loop" preload="auto"></audio>
@@ -89,6 +89,8 @@
 			<a href="form_editer">Make a form</a>
 			<br>
 			<a href="timer">Timer</a>
+			<br>
+			<a href="Image_previewer">Image previewer</a>
 			
 		</p>
 		<hr>
@@ -111,9 +113,9 @@
 
 			if(sb&&sbb){
 				count++;
-				document.getElementById("julisb").innerHTML+="!";
+				document.getElementById("Juli").innerHTML+="!";
 				if(count==times){
-					document.getElementById("julisb").innerHTML="SB JULI unlocked!";
+					document.getElementById("julisb").innerHTML="JULI unlocked!";
 					document.getElementById("juli").style.display="block";
 					sbb=false;
 				}
