@@ -1,4 +1,7 @@
 # Chaibot97.github.io
-Personal page
->! A test ground for front-end webpage development
->! For FUN
+<details> 
+  <summary>My personal page</summary>
+    <li>  A test ground for front-end webpage development</li>
+    <li> and for FUN </li> 
+</details>
+
