@@ -1,8 +1,9 @@
 ---
 permalink: "/web_apps/"
+title: Web Apps
 ---
 
-# Web Apps (links to external sites)
+#### (links to external sites)
 ----
 - [Covid Dashboard](https://Chaibot97.github.com/Covid_Dashboard)
   - What's happening with the COVID-19 in US?

@@ -1,8 +1,7 @@
 ---
 permalink: "/"
+title: About Me
 ---
-# About Me
-----
 Currently a Computer Science Master student at Yale university.\
 Got my Bachelor of Engineering degree in computer & system engineering dual Computer Science at Rensselaer Polytechnic Institute.\
 I love making projects (always get things done) and I am also interested in AI (Espicially Computational Vision).\
