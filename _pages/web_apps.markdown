@@ -1,5 +1,5 @@
 ---
-permalink: "/web_apps"
+permalink: "/web_apps/"
 ---
 
 # Web Apps (links to external sites)
