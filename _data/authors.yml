@@ -1,0 +1,17 @@
+Lizhou Cai:
+  name        : "Lizhou Cai"
+  bio         : "A Geek"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:Lizhou.cai@yale.edu"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://Chaibot97.github.com"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lizhoucai/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://chaibot97.github.io"
