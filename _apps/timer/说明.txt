@@ -1,0 +1,9 @@
+把音频放在文件夹里，改名叫ring覆盖掉原有铃声。
+若音频不是.m4r格式则需要用notepad打开timer并修改一下：
+
+<!-- 修改我 -->
+	<audio id="ring" src="ring.m4a" loop="loop" preload="auto"></audio>
+<!-- 修改我 -->
+
+src="ring.m4a"
+部分中ring.m4a改为铃声的 名字.格式
